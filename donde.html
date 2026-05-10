@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dónde atiendo · Andrea Morera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">logo</a>
+  <div class="nav-links">
+    <a href="shiatsu.html">Terapias</a>
+    <a href="historia.html">Mi historia</a>
+    <a href="donde.html" class="active">Dónde</a>
+  </div>
+  <div class="nav-right">
+    <span class="nav-lang">EN</span>
+    <a href="#" class="nav-icon">&#xe62c;</a>
+    <a href="#" class="nav-icon">&#xe62b;</a>
+    <div class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="shiatsu.html">Terapias</a>
+  <a href="historia.html">Mi historia</a>
+  <a href="donde.html">Dónde</a>
+  <a href="contacto.html">Contáctame</a>
+</div>
+
+<div class="donde-header">
+  <div class="inner">
+    <div class="page-eyebrow">Ubicación · Madrid</div>
+    <h1 class="page-title">¿Dónde atiendo?</h1>
+    <p style="font-size:14px; color:var(--musgo); line-height:1.75; margin-top:10px; max-width:480px">Trabajo en dos espacios en Madrid. Si prefieres que vaya a tu domicilio, escríbeme y lo valoramos juntos.</p>
+  </div>
+</div>
+<div class="donde-body">
+  <div class="inner">
+    <div class="centros-grid">
+      <div class="centro-card">
+        <div class="centro-map-area" style="background:#4E665A">
+          <div class="centro-map-pattern"></div>
+          <span class="centro-map-pin" style="color:#A5C180">📍</span>
+        </div>
+        <div class="centro-info">
+          <div class="centro-tag">Centro 01</div>
+          <div class="centro-name">Espacio Calma</div>
+          <div class="centro-address">C. de Hilarión Eslava, 34<br>Chamberí, 28015 Madrid</div>
+          <a class="centro-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd4229bd31304f2f:0xd3e55a57150d678?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener noreferrer">↗ Ver en Google Maps</a>
+        </div>
+      </div>
+      <div class="centro-card">
+        <div class="centro-map-area" style="background:#684353">
+          <div class="centro-map-pattern"></div>
+          <span class="centro-map-pin" style="color:#D4D5C0">📍</span>
+        </div>
+        <div class="centro-info">
+          <div class="centro-tag">Centro 02</div>
+          <div class="centro-name">Centro Estima</div>
+          <div class="centro-address">C. de Lavapiés, 10<br>Centro, 28012 Madrid</div>
+          <a class="centro-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd4227d5356b6d7b:0x86bfcc48f5b99be0?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener noreferrer">↗ Ver en Google Maps</a>
+        </div>
+      </div>
+    </div>
+    <div class="domicilio-note">
+      <span class="domicilio-icon">🏠</span>
+      <div>
+        <div class="domicilio-title">¿Prefieres que vaya a tu domicilio?</div>
+        <div class="domicilio-text">También atiendo a domicilio bajo ciertas condiciones y con tarifa específica. Escríbeme y lo hablamos sin compromiso.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-left">
+    <a href="index.html" class="footer-logo">logo</a>
+    <a class="footer-lk" href="shiatsu.html">Terapias</a>
+    <a class="footer-lk" href="historia.html">Mi historia</a>
+    <a class="footer-lk" href="#">Instagram</a>
+  </div>
+  <span class="footer-legal">Aviso legal · Privacidad</span>
+</footer>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>

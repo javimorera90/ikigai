@@ -76,6 +76,10 @@
     color: var(--rosa);
     letter-spacing: 0.08em;
     cursor: pointer;
+    text-decoration: none;
+  }
+  .nav-lang:hover {
+    opacity: 0.75;
   }
   .nav-icon {
     display: inline-flex;

@@ -1,84 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shiatsu · Ikigai</title>
+<title>Reflexology · Ikigai</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="icon" href="assets/logo_mariposa.png" type="image/png">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="icon" href="../assets/logo_mariposa.png" type="image/png">
+<link rel="alternate" hreflang="es" href="../es/reflex.html">
+<link rel="alternate" hreflang="en" href="reflex.html">
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo"><img src="assets/logo_negro_transparente.png" alt="Ikigai · Andrea Morera"></a>
+  <a href="index.html" class="nav-logo"><img src="../assets/logo_negro_transparente.png" alt="Ikigai · Andrea Morera"></a>
   <div class="nav-links">
-    <a href="shiatsu.html" class="active">Terapias</a>
-    <a href="historia.html">Mi historia</a>
-    <a href="donde.html">Dónde</a>
+    <a href="shiatsu.html" class="active">Therapies</a>
+    <a href="historia.html">My story</a>
+    <a href="donde.html">Where</a>
   </div>
   <div class="nav-right">
-    <span class="nav-lang">EN</span>
+    <a href="../es/reflex.html" class="nav-lang" hreflang="es" aria-label="Ver en español">EN</a>
     <a href="https://www.instagram.com/ikigai.shiatsu/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Instagram" title="Instagram">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
     </a>
     <a href="https://wa.me/34644870667" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="WhatsApp" title="WhatsApp">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </a>
-    <div class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menú">
+    <div class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
       <span></span><span></span><span></span>
     </div>
   </div>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
-  <a href="shiatsu.html">Terapias</a>
-  <a href="historia.html">Mi historia</a>
-  <a href="donde.html">Dónde</a>
-  <a href="contacto.html">Contáctame</a>
+  <a href="shiatsu.html">Therapies</a>
+  <a href="historia.html">My story</a>
+  <a href="donde.html">Where</a>
+  <a href="contacto.html">Get in touch</a>
 </div>
 
 <div class="terapia-page">
-  <div class="terapia-photo" style="background:#4E665A">
+  <div class="terapia-photo" style="background:#A5C180">
     <div class="terapia-photo-pattern"></div>
-    <span class="terapia-photo-label">Foto Andrea · Shiatsu</span>
+    <span class="terapia-photo-label">Photo · Andrea · Reflexology</span>
   </div>
   <div class="terapia-content">
     <div class="terapia-subnav">
-      <a class="terapia-tab on" href="shiatsu.html">Shiatsu</a>
-      <a class="terapia-tab" href="thai.html">Masaje Thai</a>
-      <a class="terapia-tab" href="reflex.html">Reflexología</a>
+      <a class="terapia-tab" href="shiatsu.html">Shiatsu</a>
+      <a class="terapia-tab" href="thai.html">Thai massage</a>
+      <a class="terapia-tab on" href="reflex.html">Reflexology</a>
       <a class="terapia-tab" href="chi.html">Chi Nei Tsang</a>
     </div>
-    <h1 class="terapia-title">Shiatsu</h1>
-    <p class="terapia-subtitle">El arte del tacto consciente</p>
+    <h1 class="terapia-title">Reflexology</h1>
+    <p class="terapia-subtitle">Your whole body at your feet</p>
     <div class="terapia-meta-cta">
       <div class="terapia-meta">
-        <div class="meta-item"><span class="meta-label">Duración</span><span class="meta-value">75 min</span></div>
-        <div class="meta-item"><span class="meta-label">Precio</span><span class="meta-value">62 €</span></div>
+        <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">45 min</span></div>
+        <div class="meta-item"><span class="meta-label">Fee</span><span class="meta-value">50 €</span></div>
       </div>
-      <a class="btn-primary" href="contacto.html">Contáctame →</a>
+      <a class="btn-primary" href="contacto.html">Get in touch →</a>
     </div>
-    <p class="terapia-desc">Inspiradas en la línea Namikoshi, mis sesiones van más allá de la técnica manual; son un espacio para recuperar el equilibrio a través del tacto con intención. A través de la presión en puntos específicos y el sistema de meridianos, trabajamos para liberar los bloqueos de energía (Ki) causados por el estrés y la rutina.</p>
-    <div class="terapia-benefits-label">Cada sesión es una invitación a</div>
+    <p class="terapia-desc">Our feet are far more than something to stand on — they're a detailed map of everything happening inside. Through foot reflexology, we work specific points that speak to each organ, gland and system by reflex, sending calm and repair wherever you need it most.</p>
+    <div class="terapia-benefits-label">How it can support you</div>
     <div class="terapia-benefits">
       <div class="terapia-benefit">
-        <div><div class="terapia-benefit-name">Escuchar a tu cuerpo</div><div class="terapia-benefit-body">Traducir los síntomas en mensajes claros.</div></div>
+        <div><div class="terapia-benefit-name">Relief where you load weight</div><div class="terapia-benefit-body">Ease for the arch, ball of the foot and ankles — especially if your feet work hard for you.</div></div>
         <span class="terapia-benefit-arrow">→</span>
       </div>
       <div class="terapia-benefit">
-        <div><div class="terapia-benefit-name">Recuperar la armonía</div><div class="terapia-benefit-body">Equilibrar el flujo vital y calmar la mente.</div></div>
+        <div><div class="terapia-benefit-name">Softening stress</div><div class="terapia-benefit-body">Helps fatigue melt, steadies the nervous system and supports circulation so legs feel lighter.</div></div>
         <span class="terapia-benefit-arrow">→</span>
       </div>
       <div class="terapia-benefit">
-        <div><div class="terapia-benefit-name">Sanación integral</div><div class="terapia-benefit-body">Abordar el malestar desde su raíz física y emocional.</div></div>
+        <div><div class="terapia-benefit-name">Balance from the ground up</div><div class="terapia-benefit-body">Encourages the body's natural rhythms so it can regulate itself from below.</div></div>
         <span class="terapia-benefit-arrow">→</span>
       </div>
-    </div>
-    <div class="terapia-tools">
-      <div class="terapia-tools-label">Herramientas complementarias</div>
-      <div class="terapia-tools-text">Para profundizar en el tratamiento, puedo integrar Sotai Ho, moxa, ventosas o acupuntura — siempre bajo tu consentimiento.</div>
     </div>
   </div>
 </div>
@@ -86,13 +84,13 @@
 <footer>
   <div class="footer-left">
     <a href="index.html" class="footer-logo">logo</a>
-    <a class="footer-lk" href="shiatsu.html">Terapias</a>
-    <a class="footer-lk" href="historia.html">Mi historia</a>
+    <a class="footer-lk" href="shiatsu.html">Therapies</a>
+    <a class="footer-lk" href="historia.html">My story</a>
     <a class="footer-lk" href="https://www.instagram.com/ikigai.shiatsu/" target="_blank" rel="noopener noreferrer">Instagram</a>
   </div>
-  <span class="footer-legal">Aviso legal · Privacidad</span>
+  <span class="footer-legal">Legal notice · Privacy</span>
 </footer>
 
-<script src="js/app.js" defer></script>
+<script src="../js/app.js" defer></script>
 </body>
 </html>

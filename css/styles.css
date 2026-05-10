@@ -755,6 +755,11 @@
   .footer-lk:hover { opacity: 0.65; }
   .footer-legal { font-size: 10px; color: var(--rosa); opacity: 0.7; }
 
+  footer.footer--dark .footer-logo {
+    background: rgba(212,213,192,0.15);
+    color: var(--lino);
+  }
+
   /* ── RESPONSIVE MOBILE ── */
   /* ── HAMBURGER MENU ── */
   .nav-hamburger {
@@ -807,9 +812,13 @@
     .nav-links { display: none; }
     .nav-hamburger { display: flex; }
 
-    /* Home */
-    .home-hero { grid-template-columns: 1fr; grid-template-rows: 60vw 1fr; height: auto; }
-    .hero-video { min-height: 60vw; }
+    /* Home — marco vertical (fotos / vídeo 9:16); antes 60vw forzaba formato horizontal */
+    .home-hero { grid-template-columns: 1fr; grid-template-rows: auto 1fr; height: auto; min-height: 0; }
+    .hero-video {
+      min-height: 0;
+      aspect-ratio: 3 / 4;
+      width: 100%;
+    }
     .hero-content { padding: 28px 24px; min-height: auto; }
     .hero-h1 { font-size: 24px; }
     .hero-body { font-size: 13px; margin-bottom: 20px; }
@@ -817,7 +826,11 @@
 
     /* Terapias */
     .terapia-page { grid-template-columns: 1fr; height: auto; overflow: visible; }
-    .terapia-photo { height: 60vw; min-height: 240px; }
+    .terapia-photo {
+      height: auto;
+      aspect-ratio: 3 / 4;
+      min-height: 200px;
+    }
     .terapia-content { padding: 24px 24px 32px; overflow: visible; }
     .terapia-subnav { gap: 5px; margin-bottom: 16px; flex-wrap: wrap; }
     .terapia-tab { font-size: 10px; padding: 4px 10px; }
@@ -827,7 +840,11 @@
 
     /* Mi historia */
     .historia-hero { grid-template-columns: 1fr; height: auto; overflow: visible; }
-    .historia-hero-photo { height: 60vw; min-height: 240px; }
+    .historia-hero-photo {
+      height: auto;
+      aspect-ratio: 3 / 4;
+      min-height: 200px;
+    }
     .historia-hero-content { padding: 28px 24px; }
     .historia-story { padding: 32px 24px; }
     .historia-story-inner { grid-template-columns: 1fr; gap: 16px; }
@@ -845,6 +862,45 @@
     .contacto-section { padding: 52px 24px; min-height: auto; }
     .contacto-title { font-size: 28px; }
     .inner { padding: 0; }
-    footer { padding: 16px 24px; flex-direction: column; gap: 10px; text-align: center; }
-    .footer-left { flex-direction: column; gap: 10px; }
+
+    /* Footer móvil: solo logo (misma marca que nav) */
+    footer {
+      padding: 20px 24px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0;
+      text-align: center;
+    }
+    .footer-left {
+      flex-direction: row;
+      justify-content: center;
+      gap: 0;
+      width: 100%;
+    }
+    .footer-lk,
+    .footer-legal {
+      display: none !important;
+    }
+    footer .footer-logo {
+      width: min(168px, 52vw);
+      height: 40px;
+      max-width: 200px;
+      border-radius: 0;
+      background: transparent url(../assets/logo_negro_transparente.png) no-repeat center / contain !important;
+      font-size: 0 !important;
+      line-height: 0 !important;
+      color: transparent !important;
+      overflow: hidden;
+      text-indent: -9999px;
+      white-space: nowrap;
+    }
+    footer .footer-logo span {
+      display: none;
+    }
+    /* Contacto: mismo PNG sobre ciruela */
+    footer.footer--dark .footer-logo {
+      filter: brightness(0) invert(1);
+      opacity: 0.92;
+    }
   }

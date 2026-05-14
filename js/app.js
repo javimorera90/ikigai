@@ -22,28 +22,50 @@ function initReviewsCarousel(root) {
     return second.getBoundingClientRect().left - first.getBoundingClientRect().left;
   };
 
+  const getMaxScroll = () => Math.max(0, track.scrollWidth - track.clientWidth);
+
+  /** Puntos = posiciones reales de scroll (p. ej. 6 tarjetas y 3 visibles → 4 páginas), no una por tarjeta. */
+  const getPageCount = () => {
+    const step = getStep();
+    if (step <= 0) return 1;
+    const max = getMaxScroll();
+    return Math.max(1, Math.min(slides.length, Math.floor(max / step) + 1));
+  };
+
   const getActiveIndex = () => {
     const step = getStep();
     if (step <= 0) return 0;
-    return Math.round(track.scrollLeft / step);
+    const max = getMaxScroll();
+    const pageCount = getPageCount();
+    let idx = Math.round(track.scrollLeft / step);
+    if (max > 0 && track.scrollLeft >= max - 2) idx = pageCount - 1;
+    return Math.max(0, Math.min(pageCount - 1, idx));
   };
 
   let dots = [];
-  if (dotsHost) {
+
+  const buildDots = () => {
+    if (!dotsHost) return;
     dotsHost.innerHTML = '';
-    dots = slides.map((_, i) => {
+    dots = [];
+    const pageCount = getPageCount();
+    for (let i = 0; i < pageCount; i++) {
       const d = document.createElement('button');
       d.type = 'button';
       d.className = 'reviews-dot';
       d.setAttribute('role', 'tab');
-      d.setAttribute('aria-label', `Ir a la reseña ${i + 1}`);
+      d.setAttribute('aria-label', `Ir a la página ${i + 1} del carrusel`);
       d.addEventListener('click', () => {
-        track.scrollTo({ left: getStep() * i, behavior: 'smooth' });
+        const step = getStep();
+        const max = getMaxScroll();
+        track.scrollTo({ left: Math.min(i * step, max), behavior: 'smooth' });
       });
       dotsHost.appendChild(d);
-      return d;
-    });
-  }
+      dots.push(d);
+    }
+  };
+
+  buildDots();
 
   const updateUI = () => {
     const idx = getActiveIndex();
@@ -53,8 +75,8 @@ function initReviewsCarousel(root) {
     });
     if (prev) prev.disabled = track.scrollLeft <= 1;
     if (next) {
-      const max = track.scrollWidth - track.clientWidth - 1;
-      next.disabled = track.scrollLeft >= max;
+      const max = getMaxScroll();
+      next.disabled = track.scrollLeft >= max - 1;
     }
   };
 
@@ -79,7 +101,10 @@ function initReviewsCarousel(root) {
     if (e.key === 'ArrowLeft') { e.preventDefault(); track.scrollBy({ left: -getStep(), behavior: 'smooth' }); }
   });
 
-  window.addEventListener('resize', updateUI, { passive: true });
+  window.addEventListener('resize', () => {
+    buildDots();
+    updateUI();
+  }, { passive: true });
   updateUI();
 }
 

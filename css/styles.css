@@ -1147,6 +1147,11 @@
     .historia-hero-content { padding: 28px 24px; }
     .historia-story { padding: 32px 24px; }
     .historia-story-inner { grid-template-columns: 1fr; gap: 16px; }
+    .historia-hero-content .page-eyebrow,
+    .historia-story-label,
+    .formacion-title {
+      font-size: calc(10px + var(--fs) + 1pt);
+    }
     .formacion-section { padding: 32px 24px; }
     .formacion-grid { grid-template-columns: 1fr; gap: 24px; }
 
@@ -1168,6 +1173,7 @@
     /* Shared */
     .section-cta { flex-direction: column; gap: 16px; text-align: center; padding: 28px 24px; }
     .section-cta-inner { flex-direction: column; gap: 16px; align-items: center; }
+    .section-cta-inner .btn-primary { align-self: center; }
     .contacto-section { padding: 52px 24px; min-height: auto; }
     .contacto-title { font-size: calc(28px + var(--fs)); }
     .inner { padding: 0; }

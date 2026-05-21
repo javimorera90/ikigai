@@ -11,7 +11,7 @@
     --texto-suave: #5a5550;
     /* Padding nav + logo + borde (~60.5px): si es menor, la página supera 100vh unos píxeles y aparece scroll vacío */
     --nav-h: 61px;
-    --fs: 1px;
+    --fs: 2px;
   }
 
   html {

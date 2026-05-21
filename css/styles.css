@@ -187,6 +187,9 @@
     letter-spacing: -0.02em;
     margin-bottom: 14px;
   }
+  .hero-h1--italic {
+    font-style: italic;
+  }
   .hero-body {
     font-size: calc(14px + var(--fs));
     color: var(--musgo);

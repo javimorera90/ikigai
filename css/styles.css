@@ -380,7 +380,6 @@
     color: var(--texto-suave);
     line-height: 1.8;
     margin-bottom: 16px;
-    max-width: 480px;
   }
   .terapia-benefits-label {
     font-size: calc(9px + var(--fs));
@@ -431,44 +430,6 @@
     font-size: calc(11px + var(--fs));
     color: var(--texto-suave);
     line-height: 1.6;
-  }
-  /* Ancho alineado: texto y bullets hasta el borde del CTA (prueba Shiatsu ES) */
-  .terapia-content--aligned {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    column-gap: 12px;
-    align-content: start;
-  }
-  .terapia-content--aligned .terapia-subnav,
-  .terapia-content--aligned .terapia-title,
-  .terapia-content--aligned .terapia-subtitle {
-    grid-column: 1 / -1;
-  }
-  .terapia-content--aligned .terapia-meta-cta {
-    display: contents;
-  }
-  .terapia-content--aligned .terapia-meta {
-    grid-column: 1;
-    margin-bottom: 16px;
-  }
-  .terapia-content--aligned .terapia-meta-cta .btn-primary {
-    grid-column: 2;
-    align-self: center;
-    margin-bottom: 16px;
-  }
-  .terapia-content--aligned .terapia-desc,
-  .terapia-content--aligned .terapia-benefits-label,
-  .terapia-content--aligned .terapia-benefits,
-  .terapia-content--aligned .terapia-tools {
-    grid-column: 1;
-    max-width: none;
-  }
-  /* Ancho completo: texto y bullets ocupan toda la columna (prueba Shiatsu EN) */
-  .terapia-content--full-width .terapia-desc,
-  .terapia-content--full-width .terapia-benefits-label,
-  .terapia-content--full-width .terapia-benefits,
-  .terapia-content--full-width .terapia-tools {
-    max-width: none;
   }
   .page-eyebrow {
     font-size: calc(10px + var(--fs));
@@ -1163,20 +1124,6 @@
     .terapia-tab { font-size: calc(10px + var(--fs)); padding: 4px 10px; }
     .terapia-title { font-size: calc(28px + var(--fs)); }
     .terapia-meta-cta { flex-direction: column; align-items: flex-start; gap: 14px; }
-    .terapia-content--aligned {
-      display: flex;
-      flex-direction: column;
-    }
-    .terapia-content--aligned .terapia-meta-cta {
-      display: flex;
-      margin-bottom: 16px;
-    }
-    .terapia-content--aligned .terapia-meta {
-      margin-bottom: 0;
-    }
-    .terapia-content--aligned .terapia-meta-cta .btn-primary {
-      margin-bottom: 0;
-    }
     .terapia-benefits { gap: 5px; }
 
     /* Mi historia */

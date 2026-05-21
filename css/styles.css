@@ -417,7 +417,7 @@
     background: rgba(104,67,83,0.06);
     border-radius: 8px;
     padding: 10px 14px;
-    margin-top: 6px;
+    margin-top: 20px;
   }
   .terapia-tools-label {
     font-size: calc(9px + var(--fs));
@@ -1125,6 +1125,7 @@
     .terapia-title { font-size: calc(28px + var(--fs)); }
     .terapia-meta-cta { flex-direction: column; align-items: flex-start; gap: 14px; }
     .terapia-benefits { gap: 5px; }
+    .terapia-tools { margin-top: 16px; }
 
     /* Mi historia */
     .historia-hero { grid-template-columns: 1fr; height: auto; overflow: visible; }

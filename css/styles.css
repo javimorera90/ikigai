@@ -129,16 +129,6 @@
     object-position: center center;
     z-index: 0;
   }
-  .hero-video--has-media .hero-video-pattern {
-    opacity: 0.35;
-  }
-  .hero-video-pattern {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    background: repeating-linear-gradient(135deg, rgba(0,0,0,0.08) 0, rgba(0,0,0,0.08) 1px, transparent 1px, transparent 16px);
-  }
   .hero-video-inner {
     position: relative;
     z-index: 1;

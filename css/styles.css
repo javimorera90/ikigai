@@ -11,9 +11,11 @@
     --texto-suave: #5a5550;
     /* Padding nav + logo + borde (~60.5px): si es menor, la página supera 100vh unos píxeles y aparece scroll vacío */
     --nav-h: 61px;
+    --fs: 1px;
   }
 
   html {
+    font-size: calc(16px + var(--fs));
     scroll-behavior: smooth;
     scroll-padding-top: var(--nav-h);
     overflow-x: clip;
@@ -62,7 +64,7 @@
     margin-left: 28px;
   }
   .nav-links a {
-    font-size: 12px;
+    font-size: calc(12px + var(--fs));
     color: var(--lino);
     text-decoration: none;
     letter-spacing: 0.03em;
@@ -77,7 +79,7 @@
     margin-left: auto;
   }
   .nav-lang {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--rosa);
     letter-spacing: 0.08em;
     cursor: pointer;
@@ -143,7 +145,7 @@
     text-align: center;
   }
   .hero-video-label {
-    font-size: 10px;
+    font-size: calc(10px + var(--fs));
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--salvia);
@@ -162,13 +164,13 @@
     margin: 0 auto;
     color: var(--salvia);
     opacity: 0.5;
-    font-size: 20px;
+    font-size: calc(20px + var(--fs));
   }
   .hero-ratio {
     position: absolute;
     bottom: 16px;
     right: 16px;
-    font-size: 9px;
+    font-size: calc(9px + var(--fs));
     color: var(--salvia);
     opacity: 0.35;
     letter-spacing: 0.08em;
@@ -181,14 +183,14 @@
     padding: 56px 52px;
   }
   .hero-eyebrow {
-    font-size: 10px;
+    font-size: calc(10px + var(--fs));
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--rosa);
     margin-bottom: 18px;
   }
   .hero-h1 {
-    font-size: 32px;
+    font-size: calc(32px + var(--fs));
     font-weight: 400;
     color: var(--ciruela);
     line-height: 1.2;
@@ -196,7 +198,7 @@
     margin-bottom: 14px;
   }
   .hero-body {
-    font-size: 14px;
+    font-size: calc(14px + var(--fs));
     color: var(--musgo);
     line-height: 1.8;
     margin-bottom: 32px;
@@ -225,19 +227,19 @@
     border-color: rgba(104,67,83,0.4);
   }
   .service-name {
-    font-size: 14px;
+    font-size: calc(14px + var(--fs));
     font-weight: 500;
     color: var(--ciruela);
     display: block;
   }
   .service-sub {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--musgo);
     margin-top: 2px;
     display: block;
   }
   .service-arrow {
-    font-size: 14px;
+    font-size: calc(14px + var(--fs));
     color: var(--rosa);
   }
   .hero-bottom {
@@ -250,7 +252,7 @@
     gap: 8px;
     background: var(--ciruela);
     color: var(--lino);
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     font-weight: 500;
     padding: 13px 28px;
     border-radius: 32px;
@@ -299,6 +301,9 @@
     object-position: center 42%;
     z-index: 0;
   }
+  .terapia-photo-img--focus-lower {
+    object-position: center bottom;
+  }
   .terapia-photo-pattern {
     position: absolute;
     inset: 0;
@@ -311,7 +316,7 @@
     bottom: 16px;
     left: 20px;
     z-index: 2;
-    font-size: 9px;
+    font-size: calc(9px + var(--fs));
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: rgba(255,255,255,0.3);
@@ -333,7 +338,7 @@
     flex-wrap: wrap;
   }
   .terapia-tab {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--rosa);
     padding: 5px 14px;
     border-radius: 20px;
@@ -345,7 +350,7 @@
   .terapia-tab:hover { background: rgba(104,67,83,0.06); }
   .terapia-tab.on { background: var(--ciruela); color: var(--lino); border-color: var(--ciruela); }
   .terapia-title {
-    font-size: 42px;
+    font-size: calc(42px + var(--fs));
     font-weight: 400;
     color: var(--ciruela);
     line-height: 1.0;
@@ -353,7 +358,7 @@
     margin-bottom: 4px;
   }
   .terapia-subtitle {
-    font-size: 14px;
+    font-size: calc(14px + var(--fs));
     color: var(--musgo);
     font-style: italic;
     margin-bottom: 14px;
@@ -370,25 +375,25 @@
   }
   .meta-item { display: flex; flex-direction: column; gap: 3px; }
   .meta-label {
-    font-size: 9px;
+    font-size: calc(9px + var(--fs));
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--rosa);
   }
   .meta-value {
-    font-size: 16px;
+    font-size: calc(16px + var(--fs));
     font-weight: 500;
     color: var(--ciruela);
   }
   .terapia-desc {
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     color: var(--texto-suave);
     line-height: 1.8;
     margin-bottom: 16px;
     max-width: 480px;
   }
   .terapia-benefits-label {
-    font-size: 9px;
+    font-size: calc(9px + var(--fs));
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--rosa);
@@ -408,17 +413,17 @@
     justify-content: space-between;
   }
   .terapia-benefit-name {
-    font-size: 12px;
+    font-size: calc(12px + var(--fs));
     font-weight: 500;
     color: var(--ciruela);
     margin-bottom: 2px;
   }
   .terapia-benefit-body {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--musgo);
     line-height: 1.45;
   }
-  .terapia-benefit-arrow { font-size: 12px; color: var(--rosa); flex-shrink: 0; }
+  .terapia-benefit-arrow { font-size: calc(12px + var(--fs)); color: var(--rosa); flex-shrink: 0; }
   .terapia-tools {
     background: rgba(104,67,83,0.06);
     border-radius: 8px;
@@ -426,26 +431,26 @@
     margin-top: 6px;
   }
   .terapia-tools-label {
-    font-size: 9px;
+    font-size: calc(9px + var(--fs));
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--rosa);
     margin-bottom: 4px;
   }
   .terapia-tools-text {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--texto-suave);
     line-height: 1.6;
   }
   .page-eyebrow {
-    font-size: 10px;
+    font-size: calc(10px + var(--fs));
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--rosa);
     margin-bottom: 12px;
   }
   .page-title {
-    font-size: 28px;
+    font-size: calc(28px + var(--fs));
     font-weight: 400;
     color: var(--ciruela);
     line-height: 1.15;
@@ -453,7 +458,7 @@
     margin-bottom: 8px;
   }
   .page-subtitle {
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     color: var(--musgo);
     font-style: italic;
     margin-bottom: 22px;
@@ -475,7 +480,7 @@
     justify-content: space-between;
   }
   .section-cta-text {
-    font-size: 16px;
+    font-size: calc(16px + var(--fs));
     color: var(--lino);
     font-weight: 400;
   }
@@ -489,9 +494,19 @@
     overflow: visible;
   }
   .historia-hero-photo {
-    background: var(--ciruela);
     position: relative;
     overflow: hidden;
+  }
+  .historia-hero:has(.historia-hero-photo-img) {
+    grid-template-rows: minmax(0, 1fr);
+  }
+  .historia-hero-photo-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 42%;
   }
   .historia-hero-photo-pattern {
     position: absolute;
@@ -502,7 +517,7 @@
     position: absolute;
     bottom: 16px;
     left: 20px;
-    font-size: 9px;
+    font-size: calc(9px + var(--fs));
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: rgba(212,213,192,0.35);
@@ -533,7 +548,7 @@
     align-items: start;
   }
   .historia-story-label {
-    font-size: 10px;
+    font-size: calc(10px + var(--fs));
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--rosa);
@@ -541,14 +556,14 @@
     line-height: 1.6;
   }
   .historia-story-body {
-    font-size: 15px;
+    font-size: calc(15px + var(--fs));
     color: var(--texto-suave);
     line-height: 1.9;
   }
   .historia-story-body p { margin-bottom: 1.4rem; }
   .historia-story-body p:last-child { margin-bottom: 0; }
   .pullquote {
-    font-size: 19px;
+    font-size: calc(19px + var(--fs));
     font-weight: 400;
     color: var(--ciruela);
     line-height: 1.45;
@@ -564,7 +579,7 @@
     border-top: 0.5px solid rgba(104,67,83,0.1);
   }
   .formacion-title {
-    font-size: 10px;
+    font-size: calc(10px + var(--fs));
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--rosa);
@@ -576,7 +591,7 @@
     gap: 16px;
   }
   .form-col-title {
-    font-size: 12px;
+    font-size: calc(12px + var(--fs));
     font-weight: 500;
     color: var(--ciruela);
     margin-bottom: 14px;
@@ -588,14 +603,14 @@
   }
   .form-item:last-child { border-bottom: none; }
   .form-item-name {
-    font-size: 12px;
+    font-size: calc(12px + var(--fs));
     font-weight: 500;
     color: var(--musgo);
     line-height: 1.4;
     margin-bottom: 2px;
   }
   .form-item-detail {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--ciruela);
     opacity: 0.65;
   }
@@ -616,14 +631,14 @@
     margin-bottom: 36px;
   }
   .reviews-eyebrow {
-    font-size: 10px;
+    font-size: calc(10px + var(--fs));
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--rosa);
     margin-bottom: 12px;
   }
   .reviews-title {
-    font-size: 28px;
+    font-size: calc(28px + var(--fs));
     font-weight: 400;
     color: var(--ciruela);
     line-height: 1.2;
@@ -634,20 +649,20 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     color: var(--musgo);
   }
   .reviews-stars {
     color: var(--rosa);
     letter-spacing: 0.08em;
-    font-size: 14px;
+    font-size: calc(14px + var(--fs));
   }
   .reviews-rating-text strong {
     color: var(--ciruela);
     font-weight: 500;
   }
   .reviews-lang-note {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--rosa);
     font-style: italic;
     opacity: 0.75;
@@ -706,7 +721,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: calc(14px + var(--fs));
     font-weight: 500;
     flex-shrink: 0;
     letter-spacing: 0;
@@ -718,7 +733,7 @@
     min-width: 0;
   }
   .review-author {
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     font-weight: 500;
     color: var(--ciruela);
     line-height: 1.2;
@@ -728,7 +743,7 @@
     flex-wrap: wrap;
   }
   .review-badge {
-    font-size: 9px;
+    font-size: calc(9px + var(--fs));
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--musgo);
@@ -738,18 +753,18 @@
     font-weight: 500;
   }
   .review-date {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--texto-suave);
     opacity: 0.75;
   }
   .review-stars {
     color: var(--rosa);
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     letter-spacing: 0.08em;
     margin-bottom: 10px;
   }
   .review-text {
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     color: var(--texto-suave);
     line-height: 1.65;
     margin-bottom: 14px;
@@ -757,7 +772,7 @@
   }
   .review-link {
     align-self: flex-start;
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--ciruela);
     text-decoration: none;
     border-bottom: 0.5px solid rgba(104,67,83,0.4);
@@ -775,7 +790,7 @@
     background: #fff;
     border: 0.5px solid rgba(104,67,83,0.18);
     color: var(--ciruela);
-    font-size: 22px;
+    font-size: calc(22px + var(--fs));
     line-height: 1;
     cursor: pointer;
     display: flex;
@@ -823,7 +838,7 @@
     display: block;
     text-align: center;
     margin-top: 24px;
-    font-size: 12px;
+    font-size: calc(12px + var(--fs));
     color: var(--ciruela);
     text-decoration: none;
     letter-spacing: 0.02em;
@@ -879,20 +894,20 @@
   }
   .centro-info { padding: 20px 22px; }
   .centro-tag {
-    font-size: 9px;
+    font-size: calc(9px + var(--fs));
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--rosa);
     margin-bottom: 6px;
   }
   .centro-name {
-    font-size: 15px;
+    font-size: calc(15px + var(--fs));
     font-weight: 500;
     color: var(--ciruela);
     margin-bottom: 4px;
   }
   .centro-address {
-    font-size: 12px;
+    font-size: calc(12px + var(--fs));
     color: var(--texto-suave);
     line-height: 1.55;
     margin-bottom: 14px;
@@ -901,7 +916,7 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    font-size: 12px;
+    font-size: calc(12px + var(--fs));
     color: var(--ciruela);
     text-decoration: none;
     border-bottom: 0.5px solid rgba(104,67,83,0.4);
@@ -918,19 +933,19 @@
     align-items: flex-start;
   }
   .domicilio-icon {
-    font-size: 20px;
+    font-size: calc(20px + var(--fs));
     color: var(--rosa);
     flex-shrink: 0;
     margin-top: 2px;
   }
   .domicilio-title {
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     font-weight: 500;
     color: var(--ciruela);
     margin-bottom: 4px;
   }
   .domicilio-text {
-    font-size: 13px;
+    font-size: calc(13px + var(--fs));
     color: var(--musgo);
     line-height: 1.7;
   }
@@ -947,14 +962,14 @@
     justify-content: center;
   }
   .contacto-eyebrow {
-    font-size: 10px;
+    font-size: calc(10px + var(--fs));
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--rosa);
     margin-bottom: 16px;
   }
   .contacto-title {
-    font-size: 40px;
+    font-size: calc(40px + var(--fs));
     font-weight: 400;
     color: var(--lino);
     line-height: 1.15;
@@ -962,7 +977,7 @@
     margin-bottom: 16px;
   }
   .contacto-sub {
-    font-size: 15px;
+    font-size: calc(15px + var(--fs));
     color: var(--rosa);
     line-height: 1.75;
     margin-bottom: 44px;
@@ -974,7 +989,7 @@
     gap: 12px;
     background: var(--salvia);
     color: var(--musgo);
-    font-size: 16px;
+    font-size: calc(16px + var(--fs));
     font-weight: 500;
     padding: 18px 44px;
     border-radius: 44px;
@@ -986,7 +1001,7 @@
   }
   .contacto-btn:hover { opacity: 0.88; }
   .contacto-note {
-    font-size: 12px;
+    font-size: calc(12px + var(--fs));
     color: var(--rosa);
     opacity: 0.7;
   }
@@ -1013,18 +1028,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 7px;
+    font-size: calc(7px + var(--fs));
     color: var(--ciruela);
   }
   a.footer-logo { text-decoration: none; }
   .footer-lk {
-    font-size: 11px;
+    font-size: calc(11px + var(--fs));
     color: var(--ciruela);
     text-decoration: none;
     cursor: pointer;
   }
   .footer-lk:hover { opacity: 0.65; }
-  .footer-legal { font-size: 10px; color: var(--rosa); opacity: 0.7; }
+  .footer-legal { font-size: calc(10px + var(--fs)); color: var(--rosa); opacity: 0.7; }
 
   footer.footer--dark .footer-logo {
     background: rgba(212,213,192,0.15);
@@ -1071,7 +1086,7 @@
   }
   .mobile-menu.open { display: flex; }
   .mobile-menu a {
-    font-size: 15px;
+    font-size: calc(15px + var(--fs));
     color: var(--lino);
     text-decoration: none;
     padding: 12px 0;
@@ -1081,6 +1096,9 @@
   .mobile-menu a:last-child { border-bottom: none; }
 
   @media (max-width: 768px) {
+    :root {
+      --fs: 2px;
+    }
     nav {
       padding: 12px 20px;
       position: sticky;
@@ -1098,8 +1116,8 @@
       width: 100%;
     }
     .hero-content { padding: 28px 24px; min-height: auto; }
-    .hero-h1 { font-size: 24px; }
-    .hero-body { font-size: 13px; margin-bottom: 20px; }
+    .hero-h1 { font-size: calc(24px + var(--fs)); }
+    .hero-body { font-size: calc(13px + var(--fs)); margin-bottom: 20px; }
     .services-list { gap: 6px; margin-bottom: 20px; }
 
     /* Terapias */
@@ -1111,20 +1129,23 @@
       min-height: 200px;
     }
     .terapia-photo-img { object-position: center 38%; }
+    .terapia-photo-img--focus-lower { object-position: center bottom; }
     .terapia-content { padding: 24px 24px 32px; overflow: visible; }
     .terapia-subnav { gap: 5px; margin-bottom: 16px; flex-wrap: wrap; }
-    .terapia-tab { font-size: 10px; padding: 4px 10px; }
-    .terapia-title { font-size: 28px; }
+    .terapia-tab { font-size: calc(10px + var(--fs)); padding: 4px 10px; }
+    .terapia-title { font-size: calc(28px + var(--fs)); }
     .terapia-meta-cta { flex-direction: column; align-items: flex-start; gap: 14px; }
     .terapia-benefits { gap: 5px; }
 
     /* Mi historia */
     .historia-hero { grid-template-columns: 1fr; height: auto; overflow: visible; }
+    .historia-hero:has(.historia-hero-photo-img) { grid-template-rows: none; }
     .historia-hero-photo {
       height: auto;
       aspect-ratio: 3 / 4;
       min-height: 200px;
     }
+    .historia-hero-photo-img { object-position: center 38%; }
     .historia-hero-content { padding: 28px 24px; }
     .historia-story { padding: 32px 24px; }
     .historia-story-inner { grid-template-columns: 1fr; gap: 16px; }
@@ -1139,7 +1160,7 @@
     /* Reseñas */
     .reviews-section { padding: 36px 0 44px; }
     .reviews-header { padding: 0 24px; margin-bottom: 24px; }
-    .reviews-title { font-size: 22px; }
+    .reviews-title { font-size: calc(22px + var(--fs)); }
     .reviews-track { padding: 4px 24px 8px; gap: 12px; scroll-padding-left: 24px; }
     .review-card { flex: 0 0 86%; min-height: 240px; padding: 20px 18px 16px; }
     .reviews-arrow { display: none; }
@@ -1150,7 +1171,7 @@
     .section-cta { flex-direction: column; gap: 16px; text-align: center; padding: 28px 24px; }
     .section-cta-inner { flex-direction: column; gap: 16px; align-items: center; }
     .contacto-section { padding: 52px 24px; min-height: auto; }
-    .contacto-title { font-size: 28px; }
+    .contacto-title { font-size: calc(28px + var(--fs)); }
     .inner { padding: 0; }
 
     /* Footer móvil: solo logo (misma marca que nav) */

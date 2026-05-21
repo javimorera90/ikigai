@@ -1094,7 +1094,7 @@
 
   @media (max-width: 768px) {
     :root {
-      --fs: 2px;
+      --fs: 3px;
     }
     nav {
       padding: 12px 20px;
@@ -1129,7 +1129,7 @@
     .terapia-photo-img--focus-lower { object-position: center bottom; }
     .terapia-content { padding: 24px 24px 32px; overflow: visible; }
     .terapia-subnav { gap: 5px; margin-bottom: 16px; flex-wrap: wrap; }
-    .terapia-tab { font-size: calc(10px + var(--fs)); padding: 4px 10px; }
+    .terapia-tab { font-size: calc(11px + var(--fs)); padding: 4px 10px; }
     .terapia-title { font-size: calc(28px + var(--fs)); }
     .terapia-meta-cta { flex-direction: column; align-items: flex-start; gap: 14px; }
     .terapia-benefits { gap: 5px; }

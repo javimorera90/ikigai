@@ -402,6 +402,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+  }
+  .terapia-benefit > div:first-child {
+    flex: 1;
+    min-width: 0;
+    padding-right: 4px;
   }
   .terapia-benefit-name {
     font-size: calc(12px + var(--fs));

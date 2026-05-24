@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Redirigir URLs con .html a la versión limpia (p. ej. /es/reflex.html → /es/reflex)
+RewriteCond %{THE_REQUEST} \s/+([^\s?]*?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Servir el .html correspondiente para URLs sin extensión
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]

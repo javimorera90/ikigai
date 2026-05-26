@@ -948,11 +948,11 @@
   }
 
   @media (max-width: 768px) {
-       .note-domicilio {
-           flex-direction: column !important; /* Fuerza a que los elementos se apilen uno abajo del otro */
-           align-items: center;               /* Centra el botón y el texto si lo deseas */
-           text-align: center;                /* Opcional: centra el texto para que estéticamente quede mejor en móvil */
-           gap: 15px;                         /* Añade una separación saludable entre el texto y el botón */
+    .note-domicilio {
+      flex-direction: column !important; /* Fuerza a que los elementos se apilen uno abajo del otro */
+      align-items: center;               /* Centra el botón y el texto si lo deseas */
+      text-align: center;                /* Opcional: centra el texto para que estéticamente quede mejor en móvil */
+      gap: 5px;                         /* Añade una separación saludable entre el texto y el botón */
        }
   }
 

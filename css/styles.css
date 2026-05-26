@@ -947,13 +947,21 @@
     line-height: 1.7;
   }
 
-  @media (max-width: 768px) {
-    .note-domicilio {
-      flex-direction: column !important; /* Fuerza a que los elementos se apilen uno abajo del otro */
-      align-items: center;               /* Centra el botón y el texto si lo deseas */
-      text-align: center;                /* Opcional: centra el texto para que estéticamente quede mejor en móvil */
-      gap: 5px;                         /* Añade una separación saludable entre el texto y el botón */
-       }
+ @media (max-width: 768px) {
+    .domicilio-note {
+      flex-direction: column !important; /* Ahora sí apunta a la clase correcta */
+      align-items: center;               /* Centra el botón abajo del texto */
+      text-align: center;                /* Centra el texto para que se lea mejor en móvil */
+      gap: 20px;                         /* Dale un respiro saludable para que no se pegue el botón */
+    }
+
+    /* Asegura que el botón dentro de la nota no se rompa ni quede aplastado */
+    .domicilio-note .btn-primary {
+      align-self: center !important;
+      width: 100%;
+      max-width: 240px;                  /* Tamaño ideal para pulsar con el dedo */
+      justify-content: center;
+    }
   }
 
   /* ── CONTACTO ── */

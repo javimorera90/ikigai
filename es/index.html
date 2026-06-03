@@ -8,6 +8,35 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
+<style>
+.hero-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+.regalo-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(104,67,83,0.06);
+  border: 0.5px solid rgba(104,67,83,0.18);
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: 100%;
+}
+.regalo-icon {
+  font-size: 11px;
+  color: var(--rosa);
+  flex-shrink: 0;
+}
+.regalo-text {
+  font-size: calc(12px + 2px);
+  color: var(--ciruela);
+  font-weight: 500;
+  line-height: 1.4;
+}
+</style>
 <link rel="icon" href="../assets/logo_mariposa.png" type="image/png">
 <link rel="alternate" hreflang="es" href="./">
 <link rel="alternate" hreflang="en" href="../en/">
@@ -52,31 +81,35 @@
     <p class="hero-body" style="margin-bottom:20px">Soy Andrea y te invito a este espacio donde la mente se calma y el cuerpo se suelta.<br>Un encuentro para prestar atención, comprender el dolor y volver a sentirte en casa.<br>¿Nos acompañamos?</p>
     <div class="services-list">
       <a class="service-btn" href="shiatsu">
-        <div><span class="service-name">Shiatsu</span><span class="service-sub">Tacto consciente y equilibrio emocional</span></div>
+        <div><span class="service-name">Shiatsu</span><span class="service-sub">Alivio de tensión, dolor y estrés</span></div>
         <span class="service-arrow">→</span>
       </a>
       <a class="service-btn" href="thai">
-        <div><span class="service-name">Masaje Thai</span><span class="service-sub">Movimiento para estirar los límites</span></div>
+        <div><span class="service-name">Masaje Thai</span><span class="service-sub">Movilidad, elasticidad y energía renovada</span></div>
         <span class="service-arrow">→</span>
       </a>
       <a class="service-btn" href="reflex">
-        <div><span class="service-name">Reflexología podal</span><span class="service-sub">Alivio para nuestros puntos de apoyo</span></div>
+        <div><span class="service-name">Reflexología podal</span><span class="service-sub">Equilibrio y alivio desde los pies</span></div>
         <span class="service-arrow">→</span>
       </a>
       <a class="service-btn" href="chi">
-        <div><span class="service-name">Chi Nei Tsang</span><span class="service-sub">Masaje abdominal, armonizar desde el centro</span></div>
+        <div><span class="service-name">Chi Nei Tsang</span><span class="service-sub">Digestión, estrés y equilibrio desde el abdomen</span></div>
         <span class="service-arrow">→</span>
       </a>
       <a class="service-btn" href="facial">
-        <div><span class="service-name">Masaje Facial Japonés</span><span class="service-sub">Rostro libre, expresión renovada</span></div>
+        <div><span class="service-name">Masaje Facial Japonés</span><span class="service-sub">Tensión facial, mandíbula y calma profunda</span></div>
         <span class="service-arrow">→</span>
       </a>
       <a class="service-btn" href="combos">
-        <div><span class="service-name">Combos</span><span class="service-sub">Sesiones combinadas a medida</span></div>
+        <div><span class="service-name">Combos</span><span class="service-sub">Combinaciones personalizadas, efecto más profundo</span></div>
         <span class="service-arrow">→</span>
       </a>
     </div>
     <div class="hero-bottom">
+      <div class="regalo-banner">
+        <span class="regalo-icon">🎁</span>
+        <span class="regalo-text">¿Buscas un regalo especial? Tarjetas regalo disponibles</span>
+      </div>
       <a class="btn-primary" href="contacto">Contáctame →</a>
     </div>
   </div>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chi Nei Tsang · Ikigai · Madrid</title>
+<meta name="description" content="Chi Nei Tsang abdominal massage in Madrid with Andrea Morera. Relief for digestive issues, stress and tension through deep abdominal work rooted in Traditional Chinese Medicine.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="es" href="../es/chi">
+<link rel="alternate" hreflang="en" href="chi">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root { --ciruela: #684353; --musgo: #4E665A; --rosa: #B58F8E; --salvia: #A5C180; --lino: #D4D5C0; --blanco: #FAF9F6; --fondo: #F0EFEA; --texto: #2C2825; --suave: #5a5550; --nav-h: 61px; --fs: 2px; }
@@ -23,8 +26,7 @@ a.nav-logo { text-decoration: none; display: flex; align-items: center; }
 .nav-icon svg { width: 22px; height: 22px; }
 .terapia-page { display: grid; grid-template-columns: 5fr 7fr; min-height: calc(100vh - var(--nav-h)); }
 .terapia-photo { position: relative; overflow: hidden; background: var(--musgo); }
-.terapia-photo-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
-.terapia-photo-img--focus-lower { object-position: center bottom; }
+.terapia-photo-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center bottom; }
 .terapia-content { background: var(--blanco); padding: 36px 48px 48px; display: flex; flex-direction: column; }
 .terapia-subnav { display: flex; gap: 6px; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 0.5px solid rgba(104,67,83,0.12); flex-wrap: wrap; }
 .terapia-tab { font-size: calc(11px + var(--fs)); color: var(--rosa); padding: 5px 14px; border-radius: 20px; border: 0.5px solid rgba(104,67,83,0.2); text-decoration: none; letter-spacing: 0.02em; transition: background 0.2s; }
@@ -48,6 +50,11 @@ a.nav-logo { text-decoration: none; display: flex; align-items: center; }
 .prop-label { font-size: calc(9px + var(--fs)); letter-spacing: 0.14em; text-transform: uppercase; color: var(--rosa); margin-bottom: 8px; }
 .prop-text { font-size: calc(13.5px + var(--fs)); color: var(--suave); line-height: 1.85; }
 .prop-text strong { color: var(--ciruela); font-weight: 500; }
+.bono-strip { display: flex; align-items: center; gap: 16px; background: rgba(104,67,83,0.06); border: 0.5px solid rgba(104,67,83,0.18); border-radius: 10px; padding: 12px 16px; margin-bottom: 24px; }
+.bono-left { display: flex; flex-direction: column; gap: 2px; }
+.bono-label { font-size: calc(12px + var(--fs)); font-weight: 500; color: var(--ciruela); letter-spacing: 0.01em; }
+.bono-desc { font-size: calc(11px + var(--fs)); color: var(--suave); line-height: 1.5; }
+.bono-desc s { opacity: 0.5; text-decoration-color: var(--rosa); }
 .cta-row { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 4px; }
 .cta-note { font-size: calc(11px + var(--fs)); color: var(--rosa); opacity: 0.7; font-style: italic; }
 .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--ciruela); color: var(--lino); font-size: calc(13px + var(--fs)); font-weight: 500; padding: 13px 28px; border-radius: 32px; letter-spacing: 0.03em; text-decoration: none; font-family: 'DM Sans', sans-serif; transition: opacity 0.2s; border: none; cursor: pointer; }
@@ -62,34 +69,18 @@ a.nav-logo { text-decoration: none; display: flex; align-items: center; }
   .symptom-cards { grid-template-columns: 1fr; }
   .cta-row { flex-direction: column; gap: 12px; align-items: flex-start; }
 }
-
-/* Bono */
-.bono-strip {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background: rgba(104,67,83,0.06);
-  border: 0.5px solid rgba(104,67,83,0.18);
-  border-radius: 10px;
-  padding: 12px 16px;
-  margin-bottom: 24px;
-}
-.bono-left { display: flex; flex-direction: column; gap: 2px; }
-.bono-label { font-size: calc(12px + var(--fs)); font-weight: 500; color: var(--ciruela); letter-spacing: 0.01em; }
-.bono-desc { font-size: calc(11px + var(--fs)); color: var(--suave); line-height: 1.5; }
-.bono-desc s { opacity: 0.5; text-decoration-color: var(--rosa); }
 </style>
 </head>
 <body>
 <nav>
   <a href="../es/" class="nav-logo"><img src="../assets/logo_negro_transparente.png" alt="Ikigai · Andrea Morera"></a>
   <div class="nav-links">
-    <a href="shiatsu" class="active">Terapias</a>
-    <a href="historia">Mi historia</a>
-    <a href="donde">Dónde</a>
+    <a href="shiatsu" class="active">Therapies</a>
+    <a href="historia">My story</a>
+    <a href="donde">Location</a>
   </div>
   <div class="nav-right">
-    <a href="../en/chi" class="nav-lang" hreflang="en">EN</a>
+    <a href="../es/chi" class="nav-lang" hreflang="es">ES</a>
     <a href="https://www.instagram.com/ikigai.shiatsu/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Instagram">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
     </a>
@@ -101,60 +92,54 @@ a.nav-logo { text-decoration: none; display: flex; align-items: center; }
 
 <div class="terapia-page">
   <div class="terapia-photo">
-    <img class="terapia-photo-img terapia-photo-img--focus-lower" src="../assets/Masaje_Abdominal.jpeg" alt="Chi Nei Tsang Madrid · Ikigai" width="4284" height="5712" decoding="async" fetchpriority="high">
+    <img class="terapia-photo-img" src="../assets/Masaje_Abdominal.jpeg" alt="Chi Nei Tsang Madrid · Ikigai" width="4284" height="5712" decoding="async" fetchpriority="high">
   </div>
   <div class="terapia-content">
     <div class="terapia-subnav">
       <a class="terapia-tab" href="shiatsu">Shiatsu</a>
-      <a class="terapia-tab" href="thai">Masaje Thai</a>
-      <a class="terapia-tab" href="reflex">Reflexología</a>
+      <a class="terapia-tab" href="thai">Thai Massage</a>
+      <a class="terapia-tab" href="reflex">Reflexology</a>
       <a class="terapia-tab on" href="chi">Chi Nei Tsang</a>
-      <a class="terapia-tab" href="facial">Masaje Facial</a>
+      <a class="terapia-tab" href="facial">Facial Massage</a>
       <a class="terapia-tab" href="combos">Combos</a>
     </div>
 
     <h1 class="terapia-title">Chi Nei Tsang</h1>
-    <p class="terapia-subtitle">Digestión, estrés y equilibrio desde el abdomen</p>
+    <p class="terapia-subtitle">Digestion, stress and balance from the abdomen</p>
 
     <div class="terapia-meta-cta">
       <div class="terapia-meta">
-        <div class="meta-item"><span class="meta-label">Duración</span><span class="meta-value">45 min</span></div>
-        <div class="meta-item"><span class="meta-label">Precio</span><span class="meta-value">50 €</span></div>
+        <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">45 min</span></div>
+        <div class="meta-item"><span class="meta-label">Price</span><span class="meta-value">50 €</span></div>
       </div>
-      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/abdominal" target="_blank" rel="noopener noreferrer">Reservar sesión →</a>
+      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/abdominal" target="_blank" rel="noopener noreferrer">Book a session →</a>
     </div>
 
-    <p class="terapia-lead">El abdomen es donde el estrés se instala antes de que la mente lo note: digestiones lentas, tensión en el diafragma, esa sensación de nudo constante. <strong>Esta sesión trabaja directamente en ese centro.</strong> A través de un masaje abdominal profundo, liberamos las tensiones acumuladas en los órganos y tejidos, mejorando la digestión, la respiración y el estado general del sistema nervioso.</p>
-    <p class="terapia-lead">¿Qué notas después? <em>El abdomen más libre, la respiración más profunda y una calma que se extiende a todo el cuerpo.</em> Una terapia sorprendentemente poderosa para algo que parece tan localizado.</p>
+    <p class="terapia-lead">The abdomen is where stress settles before the mind even notices — slow digestion, a tight diaphragm, that constant knotted feeling. <strong>This session works directly at that centre.</strong> Through deep abdominal massage, we release tension held in the organs and surrounding tissue, improving digestion, breathing and the overall state of the nervous system.</p>
+    <p class="terapia-lead">How do you feel afterwards? <em>A freer abdomen, deeper breath, and a calm that spreads through the whole body.</em> Surprisingly powerful for something so localised.</p>
 
-    <div class="symptoms-label">Indicado especialmente para</div>
+    <div class="symptoms-label">Especially indicated for</div>
     <div class="symptom-cards">
-      <div class="sym-card">
-        <div class="sym-name">Problemas digestivos, hinchazón y tránsito lento</div>
-      </div>
-      <div class="sym-card">
-        <div class="sym-name">Estrés, ansiedad y tensión acumulada en el centro</div>
-      </div>
-      <div class="sym-card">
-        <div class="sym-name">Respiración superficial y sensación de bloqueo interno</div>
-      </div>
+      <div class="sym-card"><div class="sym-name">Digestive issues, bloating and slow transit</div></div>
+      <div class="sym-card"><div class="sym-name">Stress, anxiety and tension held in the core</div></div>
+      <div class="sym-card"><div class="sym-name">Shallow breathing and a sense of internal blockage</div></div>
     </div>
 
     <div class="propuesta">
-      <div class="prop-label">Mi propuesta para ti</div>
-      <p class="prop-text">Trabajo con <strong>presiones profundas y suaves</strong> sobre la zona abdominal siguiendo los principios del Chi Nei Tsang, una técnica de la Medicina Tradicional China que trata los órganos como un sistema vivo e interconectado. Combino el toque terapéutico con <strong>sonidos curativos</strong> para ayudar a que cada órgano recupere su ritmo natural y, en casos específicos y bajo tu consentimiento, acupuntura.<br><br>Tu cuerpo tiene su propia inteligencia; mi trabajo es crear las condiciones para que se exprese.</p>
+      <div class="prop-label">My approach for you</div>
+      <p class="prop-text">I work with <strong>deep yet gentle pressure</strong> on the abdominal area following the principles of Chi Nei Tsang, a Traditional Chinese Medicine technique that treats the organs as a living, interconnected system. I combine therapeutic touch with <strong>healing sounds</strong> to help each organ find its natural rhythm again and, in specific cases and with your consent, acupuncture.<br><br>Your body has its own intelligence — my work is to create the conditions for it to express itself.</p>
     </div>
 
     <div class="bono-strip">
       <div class="bono-left">
-        <span class="bono-label">Bono 5 sesiones</span>
-        <span class="bono-desc">235 € · ahorra 15 € <s>250 €</s> · ideal si vienes regularmente</span>
+        <span class="bono-label">5-session pack</span>
+        <span class="bono-desc">235 € · save 15 € <s>250 €</s> · ideal if you come regularly</span>
       </div>
     </div>
 
     <div class="cta-row">
-      <span class="cta-note">Con ropa · Aceite de coco · Camilla</span>
-      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/abdominal" target="_blank" rel="noopener noreferrer">Reservar sesión →</a>
+      <span class="cta-note">Fully clothed · Coconut oil · Table</span>
+      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/abdominal" target="_blank" rel="noopener noreferrer">Book a session →</a>
     </div>
   </div>
 </div>

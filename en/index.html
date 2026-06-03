@@ -3,11 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ikigai · Shiatsu & Massages · Madrid</title>
-<meta name="description" content="Discover Shiatsu, Thai Massage, and Reflexology in Madrid with Andrea Morera. Spaces in Chamberí and Lavapiés to heal your body.">
+<title>Ikigai · Shiatsu &amp; Traditional Massage · Madrid</title>
+<meta name="description" content="Discover Shiatsu, Thai Massage and Foot Reflexology in Madrid with Andrea Morera. Sessions in Chamberí and Lavapiés. Body therapy rooted in Eastern tradition.">  
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/styles.css">
+<style>
+.hero-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+.regalo-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(104,67,83,0.06);
+  border: 0.5px solid rgba(104,67,83,0.18);
+  border-radius: 10px;
+  padding: 12px 16px;
+  width: 100%;
+}
+.regalo-icon {
+  font-size: 11px;
+  color: var(--rosa);
+  flex-shrink: 0;
+}
+.regalo-text {
+  font-size: calc(12px + 2px);
+  color: var(--ciruela);
+  font-weight: 500;
+  line-height: 1.4;
+}
+</style>
 <link rel="icon" href="../assets/logo_mariposa.png" type="image/png">
 <link rel="alternate" hreflang="es" href="../es/">
 <link rel="alternate" hreflang="en" href="./">
@@ -19,7 +48,7 @@
   <div class="nav-links">
     <a href="shiatsu" class="active">Therapies</a>
     <a href="historia">My story</a>
-    <a href="donde">Where</a>
+    <a href="donde">Location</a>
   </div>
   <div class="nav-right">
     <a href="../es/" class="nav-lang" hreflang="es" aria-label="Ver en español">ES</a>
@@ -38,37 +67,49 @@
   <a href="./">Home</a>
   <a href="shiatsu">Therapies</a>
   <a href="historia">My story</a>
-  <a href="donde">Where</a>
+  <a href="donde">Location</a>
 </div>
 
 <div class="home-hero">
   <div class="hero-video hero-video--has-media">
-    <video class="hero-video-media" src="../assets/home-video.mp4" muted loop playsinline autoplay preload="metadata" aria-label="Video of practice in the workspace"></video>
+    <video class="hero-video-media" src="../assets/home-video.mp4" muted loop playsinline autoplay preload="metadata" aria-label="Video of the practice space"></video>
   </div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Bodywork Therapy inspired by Eastern Wisdom · Madrid</div>
-    <h1 class="hero-h1">Shiatsu and Traditional Massages</h1>
-    <p class="hero-body hero-h1--italic">"Inhabiting the body as an art of subtle attunement"</p>
-    <p class="hero-body">I'm Andrea, and I invite you into this space where the mind settles and the body lets go.<br>A space to pay attention, understand pain, and feel at home in your body again.<br>Shall we walk this path together?</p>
+    <div class="hero-eyebrow" style="margin-bottom:10px">Body Therapy from an Eastern Perspective · Madrid</div>
+    <h1 class="hero-h1" style="margin-bottom:6px">Shiatsu &amp; Traditional Massage</h1>
+    <p class="hero-body hero-h1--italic" style="margin-bottom:8px">"Inhabiting the body as an art of subtle attunement"</p>
+    <p class="hero-body" style="margin-bottom:20px">I'm Andrea, and I invite you into a space where the mind settles and the body lets go.<br>A place to pay attention, understand pain, and find your way back home.<br>Shall we begin?</p>
     <div class="services-list">
       <a class="service-btn" href="shiatsu">
-        <div><span class="service-name">Shiatsu</span><span class="service-sub">Conscious touch and emotional balance</span></div>
+        <div><span class="service-name">Shiatsu</span><span class="service-sub">Tension, pain and stress release</span></div>
         <span class="service-arrow">→</span>
       </a>
       <a class="service-btn" href="thai">
-        <div><span class="service-name">Thai massage</span><span class="service-sub">Movement to stretch your limits</span></div>
+        <div><span class="service-name">Thai Massage</span><span class="service-sub">Mobility, flexibility and renewed energy</span></div>
         <span class="service-arrow">→</span>
       </a>
       <a class="service-btn" href="reflex">
-        <div><span class="service-name">Foot reflexology</span><span class="service-sub">Relief for the feet that ground us</span></div>
+        <div><span class="service-name">Foot Reflexology</span><span class="service-sub">Balance and relief starting from the feet</span></div>
         <span class="service-arrow">→</span>
       </a>
       <a class="service-btn" href="chi">
-        <div><span class="service-name">Chi Nei Tsang</span><span class="service-sub">Abdominal massage, harmony from the center</span></div>
+        <div><span class="service-name">Chi Nei Tsang</span><span class="service-sub">Digestion, stress and balance from the abdomen</span></div>
+        <span class="service-arrow">→</span>
+      </a>
+      <a class="service-btn" href="facial">
+        <div><span class="service-name">Japanese Facial Massage</span><span class="service-sub">Facial tension, jaw and deep calm</span></div>
+        <span class="service-arrow">→</span>
+      </a>
+      <a class="service-btn" href="combos">
+        <div><span class="service-name">Combos</span><span class="service-sub">Personalised combinations, deeper effect</span></div>
         <span class="service-arrow">→</span>
       </a>
     </div>
     <div class="hero-bottom">
+      <div class="regalo-banner">
+        <span class="regalo-icon">🎁</span>
+        <span class="regalo-text">Looking for a special gift? Gift cards available</span>
+      </div>
       <a class="btn-primary" href="contacto">Get in touch →</a>
     </div>
   </div>
@@ -78,94 +119,93 @@
   <div class="reviews-inner">
     <div class="reviews-header">
       <div class="reviews-eyebrow">What people say</div>
-      <h2 id="reviews-title" class="reviews-title">Experiences from within the sessions</h2>
+      <h2 id="reviews-title" class="reviews-title">Those who have been on the table</h2>
       <div class="reviews-rating">
         <span class="reviews-stars" aria-hidden="true">★★★★★</span>
         <span class="reviews-rating-text"><strong>5.0</strong> · 65 reviews on Google</span>
       </div>
-      <div class="reviews-lang-note" lang="en">Original reviews in Spanish.</div>
     </div>
 
     <div class="reviews-carousel" data-carousel>
       <button type="button" class="reviews-arrow reviews-arrow-prev" data-carousel-prev aria-label="Previous review" aria-controls="reviews-track">‹</button>
-      <div class="reviews-track" id="reviews-track" data-carousel-track tabindex="0" aria-label="Carousel of Google reviews">
+      <div class="reviews-track" id="reviews-track" data-carousel-track tabindex="0" aria-label="Google reviews carousel">
 
-        <article class="review-card" lang="es">
+        <article class="review-card">
           <div class="review-header">
             <div class="review-avatar" aria-hidden="true">S</div>
             <div class="review-meta">
               <div class="review-author">Sofía S. <span class="review-badge" title="Google Local Guide">Local Guide</span></div>
-              <div class="review-date" lang="en">3 months ago</div>
+              <div class="review-date">3 months ago</div>
             </div>
           </div>
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
           <p class="review-text">«Excelente masaje. Te conecta con tu ser. Andrea es una persona que te entiende como un todo. Tu cuerpo y tus emociones son escuchadas con su tacto y contención. Sabe exactamente qué hacer como una profesional. Recomiendo mucho.»</p>
-          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer" lang="en">Read on Google →</a>
+          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer">Leer en Google →</a>
         </article>
 
-        <article class="review-card" lang="es">
+        <article class="review-card">
           <div class="review-header">
             <div class="review-avatar" aria-hidden="true">L</div>
             <div class="review-meta">
               <div class="review-author">Luis R.</div>
-              <div class="review-date" lang="en">11 months ago</div>
+              <div class="review-date">11 months ago</div>
             </div>
           </div>
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="review-text">«Padezco diversos dolores, algunos crónicos, y esta técnica me ha ayudado a mejorar. Andrea pone todo su interés y esfuerzo en comprender tus “dolores”, da consejos útiles, aporta otras perspectivas. Cada sesión con ella me ha permitido conocer más mi cuerpo…»</p>
-          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer" lang="en">Read on Google →</a>
+          <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="review-text">«Padezco diversos dolores, algunos crónicos, y esta técnica me ha ayudado a mejorar. Andrea pone todo su interés y esfuerzo en comprender tus "dolores", da consejos útiles, aporta otras perspectivas. Cada sesión con ella me ha permitido conocer más mi cuerpo…»</p>
+          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer">Leer en Google →</a>
         </article>
 
-        <article class="review-card" lang="es">
+        <article class="review-card">
           <div class="review-header">
             <div class="review-avatar" aria-hidden="true">A</div>
             <div class="review-meta">
               <div class="review-author">Ana Clara M. <span class="review-badge" title="Google Local Guide">Local Guide</span></div>
-              <div class="review-date" lang="en">2 years ago</div>
+              <div class="review-date">2 years ago</div>
             </div>
           </div>
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
           <p class="review-text">«He realizado varias sesiones de cuerpo entero y luego facial. Las primeras fueron por dolor de espalda (postura frente al portátil y gimnasio) y la mejora fue notable casi al instante. Me sorprendió reconocer puntos de tensión que ni sabía que tenía…»</p>
-          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer" lang="en">Read on Google →</a>
+          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer">Leer en Google →</a>
         </article>
 
-        <article class="review-card" lang="es">
+        <article class="review-card">
           <div class="review-header">
             <div class="review-avatar" aria-hidden="true">D</div>
             <div class="review-meta">
               <div class="review-author">Daniel G.</div>
-              <div class="review-date" lang="en">2 years ago</div>
+              <div class="review-date">2 years ago</div>
             </div>
           </div>
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
           <p class="review-text">«Querida Andrea, ponerme en tus manos es una experiencia que sin duda no podré dejar de vivir. La profunda relajación a la que me llevas es oro. Duermo de maravilla, gestiono mejor el estrés y mis digestiones han mejorado en las escasas 4 sesiones que llevamos.»</p>
-          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer" lang="en">Read on Google →</a>
+          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer">Leer en Google →</a>
         </article>
 
-        <article class="review-card" lang="es">
+        <article class="review-card">
           <div class="review-header">
             <div class="review-avatar" aria-hidden="true">M</div>
             <div class="review-meta">
               <div class="review-author">Mei R. <span class="review-badge" title="Google Local Guide">Local Guide</span></div>
-              <div class="review-date" lang="en">1 year ago</div>
+              <div class="review-date">1 year ago</div>
             </div>
           </div>
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
           <p class="review-text">«Siendo la primera vez que pruebo el shiatsu, Andrea me ha ayudado a entender y aprender tanto en cuerpo como en ser. La profesionalidad y pasión que pone en su práctica, además de su calidez, escucha y cuidado, hace que toda la experiencia sea muy especial…»</p>
-          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer" lang="en">Read on Google →</a>
+          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer">Leer en Google →</a>
         </article>
 
-        <article class="review-card" lang="es">
+        <article class="review-card">
           <div class="review-header">
             <div class="review-avatar" aria-hidden="true">P</div>
             <div class="review-meta">
               <div class="review-author">Philippe R.</div>
-              <div class="review-date" lang="en">2 years ago</div>
+              <div class="review-date">2 years ago</div>
             </div>
           </div>
-          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
           <p class="review-text">«Andrea, además de ser una gran terapeuta, es un libro abierto. Para mí, entender la ciencia o el arte del masaje es fascinante, y Andrea fue capaz de explicarme lo complejo de forma muy simple. La presión del shiatsu es excelente. Una verdadera profesional.»</p>
-          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer" lang="en">Read on Google →</a>
+          <a class="review-link" href="https://maps.app.goo.gl/9C9UeYizV7RyXG7E6" target="_blank" rel="noopener noreferrer">Leer en Google →</a>
         </article>
 
       </div>
@@ -196,15 +236,7 @@
     "reviewCount": "65",
     "bestRating": "5",
     "worstRating": "1"
-  },
-  "review": [
-    { "@type": "Review", "inLanguage": "es", "author": { "@type": "Person", "name": "Sofía S." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Excelente masaje. Te conecta con tu ser. Andrea es una persona que te entiende como un todo. Tu cuerpo y tus emociones son escuchadas con su tacto y contención. Sabe exactamente qué hacer como una profesional. Recomiendo mucho." },
-    { "@type": "Review", "inLanguage": "es", "author": { "@type": "Person", "name": "Luis R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Padezco diversos dolores, algunos crónicos, y esta técnica me ha ayudado a mejorar. Andrea pone todo su interés y esfuerzo en comprender tus dolores, da consejos útiles, aporta otras perspectivas. Cada sesión con ella me ha permitido conocer más mi cuerpo." },
-    { "@type": "Review", "inLanguage": "es", "author": { "@type": "Person", "name": "Ana Clara M." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "He realizado varias sesiones de cuerpo entero y luego facial. Las primeras fueron por dolor de espalda (postura frente al portátil y gimnasio) y la mejora fue notable casi al instante. Me sorprendió reconocer puntos de tensión que ni sabía que tenía." },
-    { "@type": "Review", "inLanguage": "es", "author": { "@type": "Person", "name": "Daniel G." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Querida Andrea, ponerme en tus manos es una experiencia que sin duda no podré dejar de vivir. La profunda relajación a la que me llevas es oro. Duermo de maravilla, gestiono mejor el estrés y mis digestiones han mejorado en las escasas 4 sesiones que llevamos." },
-    { "@type": "Review", "inLanguage": "es", "author": { "@type": "Person", "name": "Mei R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Siendo la primera vez que pruebo el shiatsu, Andrea me ha ayudado a entender y aprender tanto en cuerpo como en ser. La profesionalidad y pasión que pone en su práctica, además de su calidez, escucha y cuidado, hace que toda la experiencia sea muy especial." },
-    { "@type": "Review", "inLanguage": "es", "author": { "@type": "Person", "name": "Philippe R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }, "reviewBody": "Andrea, además de ser una gran terapeuta, es un libro abierto. Para mí, entender la ciencia o el arte del masaje es fascinante, y Andrea fue capaz de explicarme lo complejo de forma muy simple. La presión del shiatsu es excelente. Una verdadera profesional." }
-  ]
+  }
 }
 </script>
 

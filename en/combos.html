@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shiatsu · Ikigai · Madrid</title>
-<meta name="description" content="Shiatsu therapy in Madrid with Andrea Morera. Relief for back pain, tension and chronic stress through precise digital pressure and traditional Namikoshi technique.">
+<title>Combo Sessions · Ikigai · Madrid</title>
+<meta name="description" content="Combined therapy sessions in Madrid with Andrea Morera. Shiatsu plus reflexology, facial, Chi Nei Tsang, acupuncture or tarot — personalised combinations for a deeper effect.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-<link rel="alternate" hreflang="es" href="../es/shiatsu">
-<link rel="alternate" hreflang="en" href="shiatsu">
+<link rel="alternate" hreflang="es" href="../es/combos">
+<link rel="alternate" hreflang="en" href="combos">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root { --ciruela: #684353; --musgo: #4E665A; --rosa: #B58F8E; --salvia: #A5C180; --lino: #D4D5C0; --blanco: #FAF9F6; --fondo: #F0EFEA; --texto: #2C2825; --suave: #5a5550; --nav-h: 61px; --fs: 2px; }
@@ -39,13 +39,13 @@ a.nav-logo { text-decoration: none; display: flex; align-items: center; }
 .meta-item { display: flex; flex-direction: column; gap: 3px; }
 .meta-label { font-size: calc(9px + var(--fs)); letter-spacing: 0.12em; text-transform: uppercase; color: var(--rosa); }
 .meta-value { font-size: calc(17px + var(--fs)); font-weight: 500; color: var(--ciruela); }
-.terapia-lead { font-size: calc(14px + var(--fs)); color: var(--suave); line-height: 1.85; margin-bottom: 22px; }
+.terapia-lead { font-size: calc(14px + var(--fs)); color: var(--suave); line-height: 1.85; margin-bottom: 24px; }
 .terapia-lead strong { color: var(--ciruela); font-weight: 500; }
-.terapia-lead em { font-style: italic; color: var(--musgo); }
-.symptoms-label { font-size: calc(9px + var(--fs)); letter-spacing: 0.14em; text-transform: uppercase; color: var(--rosa); margin-bottom: 10px; }
-.symptom-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 24px; }
-.sym-card { background: var(--lino); border-radius: 10px; padding: 16px 14px 14px; border: 0.5px solid rgba(104,67,83,0.08); }
-.sym-name { font-size: calc(12px + var(--fs)); font-weight: 500; color: var(--ciruela); line-height: 1.4; }
+.combos-label { font-size: calc(9px + var(--fs)); letter-spacing: 0.14em; text-transform: uppercase; color: var(--rosa); margin-bottom: 10px; }
+.combos-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
+.combo-item { background: var(--lino); border-radius: 10px; padding: 14px 16px; border: 0.5px solid rgba(104,67,83,0.08); }
+.combo-name { font-size: calc(13px + var(--fs)); font-weight: 500; color: var(--ciruela); margin-bottom: 3px; }
+.combo-desc { font-size: calc(11.5px + var(--fs)); color: var(--musgo); line-height: 1.5; }
 .propuesta { border-left: 2px solid var(--rosa); padding: 2px 0 2px 20px; margin-bottom: 28px; }
 .prop-label { font-size: calc(9px + var(--fs)); letter-spacing: 0.14em; text-transform: uppercase; color: var(--rosa); margin-bottom: 8px; }
 .prop-text { font-size: calc(13.5px + var(--fs)); color: var(--suave); line-height: 1.85; }
@@ -63,11 +63,9 @@ a.nav-logo { text-decoration: none; display: flex; align-items: center; }
   nav { padding: 12px 20px; } .nav-links { display: none; }
   .terapia-page { grid-template-columns: 1fr; }
   .terapia-photo { aspect-ratio: 3/4; min-height: 0; }
-  .terapia-photo-img { object-position: center 38%; }
   .terapia-content { padding: 24px 24px 36px; }
   .terapia-title { font-size: calc(28px + var(--fs)); }
   .terapia-meta-cta { flex-direction: column; align-items: flex-start; gap: 14px; }
-  .symptom-cards { grid-template-columns: 1fr; }
   .cta-row { flex-direction: column; gap: 12px; align-items: flex-start; }
 }
 </style>
@@ -81,7 +79,7 @@ a.nav-logo { text-decoration: none; display: flex; align-items: center; }
     <a href="donde">Location</a>
   </div>
   <div class="nav-right">
-    <a href="../es/shiatsu" class="nav-lang" hreflang="es">ES</a>
+    <a href="../es/combos" class="nav-lang" hreflang="es">ES</a>
     <a href="https://www.instagram.com/ikigai.shiatsu/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Instagram">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
     </a>
@@ -93,54 +91,70 @@ a.nav-logo { text-decoration: none; display: flex; align-items: center; }
 
 <div class="terapia-page">
   <div class="terapia-photo">
-    <img class="terapia-photo-img" src="../assets/Shiatsu.jpeg" alt="Shiatsu massage Madrid · Ikigai" width="3328" height="4437" decoding="async" fetchpriority="high">
+    <img class="terapia-photo-img" src="../assets/Andrea.jpeg" alt="Combo sessions · Ikigai · Madrid" width="3541" height="4722" decoding="async" fetchpriority="high">
   </div>
   <div class="terapia-content">
     <div class="terapia-subnav">
-      <a class="terapia-tab on" href="shiatsu">Shiatsu</a>
+      <a class="terapia-tab" href="shiatsu">Shiatsu</a>
       <a class="terapia-tab" href="thai">Thai Massage</a>
       <a class="terapia-tab" href="reflex">Reflexology</a>
       <a class="terapia-tab" href="chi">Chi Nei Tsang</a>
       <a class="terapia-tab" href="facial">Facial Massage</a>
-      <a class="terapia-tab" href="combos">Combos</a>
+      <a class="terapia-tab on" href="combos">Combos</a>
     </div>
 
-    <h1 class="terapia-title">Shiatsu</h1>
-    <p class="terapia-subtitle">Tension, pain and stress release</p>
+    <h1 class="terapia-title">Combos</h1>
+    <p class="terapia-subtitle">Personalised combinations, deeper effect</p>
 
     <div class="terapia-meta-cta">
       <div class="terapia-meta">
-        <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">75 min</span></div>
-        <div class="meta-item"><span class="meta-label">Price</span><span class="meta-value">62 €</span></div>
+        <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">90 min</span></div>
+        <div class="meta-item"><span class="meta-label">Price</span><span class="meta-value">75 €</span></div>
       </div>
-      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/shiatsu" target="_blank" rel="noopener noreferrer">Book a session →</a>
+      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/combo" target="_blank" rel="noopener noreferrer">Book a session →</a>
     </div>
 
-    <p class="terapia-lead">If you're carrying built-up tension, back pain, or a stress that just won't let go — <strong>this session is made for you.</strong> In 75 minutes we work together to release those physical and mental knots that daily life leaves behind, the ones that over time turn into stiffness, fatigue and poor concentration.</p>
-    <p class="terapia-lead">How do you feel afterwards? <em>Greater range of movement, a clearer mind, and the sensation of being back in your body.</em> Not surface-level relaxation — a real shift in how you feel.</p>
+    <p class="terapia-lead">Sometimes the body needs more than one approach. Combos bring together different modalities in a single 90-minute session for work that is <strong>more complete, deeper and better suited</strong> to what you're going through right now. Not sure which to choose? Write to me — we'll figure it out together.</p>
 
-    <div class="symptoms-label">Especially indicated for</div>
-    <div class="symptom-cards">
-      <div class="sym-card"><div class="sym-name">Back pain, lower back, neck and joint pain</div></div>
-      <div class="sym-card"><div class="sym-name">Chronic stress, headaches and insomnia</div></div>
-      <div class="sym-card"><div class="sym-name">Digestive issues or general lack of vitality</div></div>
+    <div class="combos-label">Available combinations</div>
+    <div class="combos-list">
+      <div class="combo-item">
+        <div class="combo-name">Shiatsu + Japanese Facial Massage</div>
+        <div class="combo-desc">Deep body balance closing with facial work on the jaw, temples and nervous system.</div>
+      </div>
+      <div class="combo-item">
+        <div class="combo-name">Shiatsu + Foot Reflexology</div>
+        <div class="combo-desc">Full body work closing with reflexology, deepening relaxation from the feet upwards.</div>
+      </div>
+      <div class="combo-item">
+        <div class="combo-name">Shiatsu + Chi Nei Tsang</div>
+        <div class="combo-desc">Structural and emotional release — full body work plus deep abdominal massage to let go from the centre.</div>
+      </div>
+      <div class="combo-item">
+        <div class="combo-name">Shiatsu + Acupuncture</div>
+        <div class="combo-desc">Two languages of Traditional Chinese Medicine working together to regulate energy flow from inside and out.</div>
+      </div>
+      <div class="combo-item">
+        <div class="combo-name">Shiatsu + Tarot</div>
+        <div class="combo-desc">Body and symbol — bodywork combined with a tarot reading to integrate what emerges during the session.</div>
+      </div>
     </div>
 
     <div class="propuesta">
-      <div class="prop-label">My approach for you</div>
-      <p class="prop-text">Following the traditional <strong>Namikoshi Shiatsu</strong> style, I combine rhythmic pressure with breathing techniques, <strong>Sotai Ho</strong> (active movement) and, in specific cases and with your consent, acupuncture.<br><br>Your body has its own intelligence — my work is to create the conditions for it to express itself.</p>
+      <div class="prop-label">Not sure which to choose?</div>
+      <p class="prop-text">Write to me and tell me how you're feeling or what you're looking for. <strong>Together we'll find the combination that fits you best</strong> right now — there's no right answer, only the one your body needs today.</p>
     </div>
 
     <div class="bono-strip">
       <div class="bono-left">
         <span class="bono-label">5-session pack</span>
-        <span class="bono-desc">285 € · save 25 € <s>310 €</s> · ideal if you come regularly</span>
+        <span class="bono-desc">330 € · save 45 € <s>375 €</s> · ideal if you come regularly</span>
       </div>
     </div>
 
     <div class="cta-row">
-      <span class="cta-note">Fully clothed · No oils · Table or futon</span>
-      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/shiatsu" target="_blank" rel="noopener noreferrer">Book a session →</a>
+      <span class="cta-note">90 min · personalised session</span>
+      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/combo" target="_blank" rel="noopener noreferrer">Book a session →</a>
     </div>
   </div>
 </div>

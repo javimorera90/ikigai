@@ -3,97 +3,145 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thai massage · Ikigai</title>
+<title>Thai Massage · Ikigai · Madrid</title>
+<meta name="description" content="Thai massage in Madrid with Andrea Morera. Deep stretching, mobility and renewed energy through traditional Sen line work and assisted yoga.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css">
-<link rel="icon" href="../assets/logo_mariposa.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 <link rel="alternate" hreflang="es" href="../es/thai">
 <link rel="alternate" hreflang="en" href="thai">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --ciruela: #684353; --musgo: #4E665A; --rosa: #B58F8E; --salvia: #A5C180; --lino: #D4D5C0; --blanco: #FAF9F6; --fondo: #F0EFEA; --texto: #2C2825; --suave: #5a5550; --nav-h: 61px; --fs: 2px; }
+html { font-size: calc(16px + var(--fs)); overflow-x: clip; }
+body { font-family: 'DM Sans', sans-serif; background: var(--fondo); color: var(--texto); overflow-x: clip; }
+nav { background: var(--musgo); padding: 12px 48px; display: flex; align-items: center; gap: 24px; border-bottom: 0.5px solid rgba(212,213,192,0.22); position: sticky; top: 0; z-index: 100; height: var(--nav-h); }
+.nav-logo img { display: block; height: 36px; width: auto; filter: brightness(0) invert(1); opacity: 0.93; }
+a.nav-logo { text-decoration: none; display: flex; align-items: center; }
+.nav-links { display: flex; gap: 24px; margin-left: 28px; }
+.nav-links a { font-size: calc(12px + var(--fs)); color: var(--lino); text-decoration: none; letter-spacing: 0.03em; opacity: 0.8; transition: opacity 0.2s; }
+.nav-links a.active { border-bottom: 1px solid var(--salvia); padding-bottom: 1px; opacity: 1; }
+.nav-right { display: flex; align-items: center; gap: 14px; margin-left: auto; }
+.nav-lang { font-size: calc(11px + var(--fs)); color: var(--rosa); letter-spacing: 0.08em; text-decoration: none; }
+.nav-icon { display: inline-flex; align-items: center; color: var(--salvia); opacity: 0.92; text-decoration: none; }
+.nav-icon svg { width: 22px; height: 22px; }
+.terapia-page { display: grid; grid-template-columns: 5fr 7fr; min-height: calc(100vh - var(--nav-h)); }
+.terapia-photo { position: relative; overflow: hidden; background: var(--ciruela); }
+.terapia-photo-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.terapia-content { background: var(--blanco); padding: 36px 48px 48px; display: flex; flex-direction: column; }
+.terapia-subnav { display: flex; gap: 6px; margin-bottom: 22px; padding-bottom: 18px; border-bottom: 0.5px solid rgba(104,67,83,0.12); flex-wrap: wrap; }
+.terapia-tab { font-size: calc(11px + var(--fs)); color: var(--rosa); padding: 5px 14px; border-radius: 20px; border: 0.5px solid rgba(104,67,83,0.2); text-decoration: none; letter-spacing: 0.02em; transition: background 0.2s; }
+.terapia-tab:hover { background: rgba(104,67,83,0.06); }
+.terapia-tab.on { background: var(--ciruela); color: var(--lino); border-color: var(--ciruela); }
+.terapia-title { font-size: calc(40px + var(--fs)); font-weight: 400; color: var(--ciruela); letter-spacing: -0.02em; line-height: 1.0; margin-bottom: 4px; }
+.terapia-subtitle { font-size: calc(14px + var(--fs)); color: var(--musgo); font-style: italic; margin-bottom: 20px; }
+.terapia-meta-cta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; padding-bottom: 22px; border-bottom: 0.5px solid rgba(104,67,83,0.12); }
+.terapia-meta { display: flex; gap: 28px; }
+.meta-item { display: flex; flex-direction: column; gap: 3px; }
+.meta-label { font-size: calc(9px + var(--fs)); letter-spacing: 0.12em; text-transform: uppercase; color: var(--rosa); }
+.meta-value { font-size: calc(17px + var(--fs)); font-weight: 500; color: var(--ciruela); }
+.terapia-lead { font-size: calc(14px + var(--fs)); color: var(--suave); line-height: 1.85; margin-bottom: 22px; }
+.terapia-lead strong { color: var(--ciruela); font-weight: 500; }
+.terapia-lead em { font-style: italic; color: var(--musgo); }
+.symptoms-label { font-size: calc(9px + var(--fs)); letter-spacing: 0.14em; text-transform: uppercase; color: var(--rosa); margin-bottom: 10px; }
+.symptom-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 24px; }
+.sym-card { background: var(--lino); border-radius: 10px; padding: 16px 14px 14px; border: 0.5px solid rgba(104,67,83,0.08); }
+.sym-name { font-size: calc(12px + var(--fs)); font-weight: 500; color: var(--ciruela); line-height: 1.4; }
+.propuesta { border-left: 2px solid var(--rosa); padding: 2px 0 2px 20px; margin-bottom: 28px; }
+.prop-label { font-size: calc(9px + var(--fs)); letter-spacing: 0.14em; text-transform: uppercase; color: var(--rosa); margin-bottom: 8px; }
+.prop-text { font-size: calc(13.5px + var(--fs)); color: var(--suave); line-height: 1.85; }
+.prop-text strong { color: var(--ciruela); font-weight: 500; }
+.bono-strip { display: flex; align-items: center; gap: 16px; background: rgba(104,67,83,0.06); border: 0.5px solid rgba(104,67,83,0.18); border-radius: 10px; padding: 12px 16px; margin-bottom: 24px; }
+.bono-left { display: flex; flex-direction: column; gap: 2px; }
+.bono-label { font-size: calc(12px + var(--fs)); font-weight: 500; color: var(--ciruela); letter-spacing: 0.01em; }
+.bono-desc { font-size: calc(11px + var(--fs)); color: var(--suave); line-height: 1.5; }
+.bono-desc s { opacity: 0.5; text-decoration-color: var(--rosa); }
+.cta-row { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 4px; }
+.cta-note { font-size: calc(11px + var(--fs)); color: var(--rosa); opacity: 0.7; font-style: italic; }
+.btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--ciruela); color: var(--lino); font-size: calc(13px + var(--fs)); font-weight: 500; padding: 13px 28px; border-radius: 32px; letter-spacing: 0.03em; text-decoration: none; font-family: 'DM Sans', sans-serif; transition: opacity 0.2s; border: none; cursor: pointer; }
+.btn-primary:hover { opacity: 0.85; }
+@media (max-width: 768px) {
+  nav { padding: 12px 20px; } .nav-links { display: none; }
+  .terapia-page { grid-template-columns: 1fr; }
+  .terapia-photo { aspect-ratio: 3/4; min-height: 0; }
+  .terapia-content { padding: 24px 24px 36px; }
+  .terapia-title { font-size: calc(28px + var(--fs)); }
+  .terapia-meta-cta { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .symptom-cards { grid-template-columns: 1fr; }
+  .cta-row { flex-direction: column; gap: 12px; align-items: flex-start; }
+}
+</style>
 </head>
 <body>
-
 <nav>
-  <a href="./" class="nav-logo"><img src="../assets/logo_negro_transparente.png" alt="Shiatsu · Ikigai · Madrid"></a>
+  <a href="../es/" class="nav-logo"><img src="../assets/logo_negro_transparente.png" alt="Ikigai · Andrea Morera"></a>
   <div class="nav-links">
     <a href="shiatsu" class="active">Therapies</a>
     <a href="historia">My story</a>
-    <a href="donde">Where</a>
+    <a href="donde">Location</a>
   </div>
   <div class="nav-right">
-    <a href="../es/thai" class="nav-lang" hreflang="es" aria-label="Ver en español">ES</a>
-    <a href="https://www.instagram.com/ikigai.shiatsu/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Instagram" title="Instagram">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    <a href="../es/thai" class="nav-lang" hreflang="es">ES</a>
+    <a href="https://www.instagram.com/ikigai.shiatsu/" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
     </a>
-    <a href="https://wa.me/34644870667" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="WhatsApp" title="WhatsApp">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <a href="https://wa.me/34644870667" target="_blank" rel="noopener noreferrer" class="nav-icon" aria-label="WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </a>
-    <div class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </div>
   </div>
 </nav>
-<div class="mobile-menu" id="mobile-menu">
-  <a href="./">Home</a>
-  <a href="shiatsu">Therapies</a>
-  <a href="historia">My story</a>
-  <a href="donde">Where</a>
-</div>
 
 <div class="terapia-page">
-  <div class="terapia-photo" style="background:#684353">
-    <img class="terapia-photo-img" src="../assets/Thai.jpeg" alt="Thai Massage Madrid" width="3391" height="4522" decoding="async" fetchpriority="high">
+  <div class="terapia-photo">
+    <img class="terapia-photo-img" src="../assets/Thai.jpeg" alt="Thai massage Madrid · Ikigai" width="3391" height="4522" decoding="async" fetchpriority="high">
   </div>
   <div class="terapia-content">
     <div class="terapia-subnav">
       <a class="terapia-tab" href="shiatsu">Shiatsu</a>
-      <a class="terapia-tab on" href="thai">Thai massage</a>
+      <a class="terapia-tab on" href="thai">Thai Massage</a>
       <a class="terapia-tab" href="reflex">Reflexology</a>
       <a class="terapia-tab" href="chi">Chi Nei Tsang</a>
+      <a class="terapia-tab" href="facial">Facial Massage</a>
+      <a class="terapia-tab" href="combos">Combos</a>
     </div>
-    <h1 class="terapia-title">Thai massage</h1>
-    <p class="terapia-subtitle">Movement to stretch your limits</p>
+
+    <h1 class="terapia-title">Thai Massage</h1>
+    <p class="terapia-subtitle">Mobility, flexibility and renewed energy</p>
+
     <div class="terapia-meta-cta">
       <div class="terapia-meta">
         <div class="meta-item"><span class="meta-label">Duration</span><span class="meta-value">75 min</span></div>
-        <div class="meta-item"><span class="meta-label">Fee</span><span class="meta-value">62 €</span></div>
+        <div class="meta-item"><span class="meta-label">Price</span><span class="meta-value">62 €</span></div>
       </div>
-      <a class="btn-primary" href="contacto">Get in touch →</a>
+      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/thai" target="_blank" rel="noopener noreferrer">Book a session →</a>
     </div>
-    <p class="terapia-desc">For me, this practice is a sacred dance between therapist and receiver. Thai massage takes place on a futon, in comfortable clothing, allowing us to explore your body's potential through deep stretches, pressure and rhythmic mobilizations. It's what we often call "assisted yoga".</p>
-    <p class="terapia-desc">My intention is to accompany your body as it recovers the spaces that stress or effort have gradually closed off. Working along the energy lines (Sen), we don't only unblock vital flow — we stretch muscle chains as a whole, preparing your body to be the vehicle that lets you release your full potential.</p>
-    <div class="terapia-benefits-label">What can you expect from a session?</div>
-    <div class="terapia-benefits">
-      <div class="terapia-benefit">
-        <div><div class="terapia-benefit-name">Recover your range</div><div class="terapia-benefit-body">Free the joints and stretch deep musculature, giving your body an efficient, agile, pain-free range of movement.</div></div>
-        <span class="terapia-benefit-arrow">→</span>
-      </div>
-      <div class="terapia-benefit">
-        <div><div class="terapia-benefit-name">Renewed energy</div><div class="terapia-benefit-body">By mobilizing stagnant areas, that vitality becomes available again for your life — bringing physical lightness and a clearer mind.</div></div>
-        <span class="terapia-benefit-arrow">→</span>
-      </div>
-      <div class="terapia-benefit">
-        <div><div class="terapia-benefit-name">Meditation in movement</div><div class="terapia-benefit-body">An encounter to quiet the mind through rhythm and breath, allowing your nervous system to rest while your body expands.</div></div>
-        <span class="terapia-benefit-arrow">→</span>
+
+    <p class="terapia-lead">If your body feels stiff, heavy or drained of energy — if it's been a while since you had a proper stretch — <strong>this session is made for you.</strong> Through deep assisted stretching, pressure and rhythmic mobilisations, we work to give your joints and muscles back the space that stress and routine have slowly taken away.</p>
+    <p class="terapia-lead">How do you feel afterwards? <em>Lighter and more agile, joints freed, and the satisfaction of having stretched everything you'd been holding tight for too long.</em> This isn't passive massage — it's conscious movement that transforms.</p>
+
+    <div class="symptoms-label">Especially indicated for</div>
+    <div class="symptom-cards">
+      <div class="sym-card"><div class="sym-name">Muscle stiffness and limited joint mobility</div></div>
+      <div class="sym-card"><div class="sym-name">Fatigue, heaviness and low energy</div></div>
+      <div class="sym-card"><div class="sym-name">Built-up stress and tension that won't shift</div></div>
+    </div>
+
+    <div class="propuesta">
+      <div class="prop-label">My approach for you</div>
+      <p class="prop-text">I work along the body's <strong>Sen energy lines</strong>, combining deep assisted stretches, <strong>intense pressure</strong> with hands, elbows and feet, and rhythmic mobilisations. Often called <strong>assisted yoga</strong>.<br><br>Your body has its own intelligence — my work is to create the conditions for it to express itself.</p>
+    </div>
+
+    <div class="bono-strip">
+      <div class="bono-left">
+        <span class="bono-label">5-session pack</span>
+        <span class="bono-desc">285 € · save 25 € <s>310 €</s> · ideal if you come regularly</span>
       </div>
     </div>
-    <div class="terapia-tools">
-      <div class="terapia-tools-label">Please note</div>
-      <div class="terapia-tools-text">This massage is performed fully clothed on a futon. No oils are used.</div>
+
+    <div class="cta-row">
+      <span class="cta-note">Fully clothed · No oils · On futon</span>
+      <a class="btn-primary" href="https://calendly.com/ikigaishiatsu/thai" target="_blank" rel="noopener noreferrer">Book a session →</a>
     </div>
   </div>
 </div>
-
-<footer>
-  <div class="footer-left">
-    <a href="./" class="footer-logo">logo</a>
-    <a class="footer-lk" href="shiatsu">Therapies</a>
-    <a class="footer-lk" href="historia">My story</a>
-    <a class="footer-lk" href="https://www.instagram.com/ikigai.shiatsu/" target="_blank" rel="noopener noreferrer">Instagram</a>
-  </div>
-  <span class="footer-legal">Legal notice · Privacy</span>
-</footer>
-
-<script src="../js/app.js" defer></script>
 </body>
 </html>

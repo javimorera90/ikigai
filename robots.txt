@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Permitir explícitamente a los bots de OpenAI (ChatGPT) rastrear la web
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
